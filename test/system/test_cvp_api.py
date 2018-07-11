@@ -674,6 +674,7 @@ class TestCvpClient(DutSystemTest):
             # Remove container
             self.api.delete_container(name, c['key'], parent['name'],
                                       parent['key'])
+
     def test_api_import_certificate(self):
         ''' Verify import_certificate imports certificate successfully, and
             applies the new configuration.
